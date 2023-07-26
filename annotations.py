@@ -14,6 +14,8 @@ label_map = {
 with open('data/annotations.csv', 'w', newline='') as file:
     
     writer = csv.writer(file)
+    column_names = ["data path", "label"]
+    writer.writerow(column_names)
     
     for foldername in os.listdir(directory):
         if foldername != "annotations.csv":
