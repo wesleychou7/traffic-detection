@@ -23,16 +23,17 @@ if __name__=="__main__":
     
     # GTSRB labels reference: https://github.com/magnusja/GTSRB-caffe-model/blob/master/labeller/main.py
    
-    directory = "gtsrb"
-    walk_through_dir(directory)
+    # directory = "gtsrb"
+    # walk_through_dir(directory)
+    get_test_samples("gtsrb-small/train/0", "gtsrb-small/test/0")
+    get_test_samples("gtsrb-small/train/27", "gtsrb-small/test/27")
+    get_test_samples("gtsrb-small/train/37", "gtsrb-small/test/37")
     
-    # get_test_samples("gtsrb-small/37", "gtsrb-small/test")
     print()
     directory = "gtsrb-small"
     walk_through_dir(directory)
     
     
-
-# '27': 'attention_pedestrian' - 240
 # '0': '20_speed'              - 210
+# '27': 'attention_pedestrian' - 240
 # '37': 'turn_straight_left'   - 210
